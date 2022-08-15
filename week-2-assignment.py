@@ -17,14 +17,19 @@ weekly_amt_papers = amt_papers * amt_days_delivered
 # calculate the total cost of the papers for the week
 weekly_cost = weekly_amt_papers * cost_paper
 # calculate the salary of the carrier
-weekly_salary = weekly_cost
+weekly_salary = weekly_cost * carrier_commission_percentage
 # caculate the total pay of the carrier for the week
 weekly_pay = weekly_salary + amt_tips
 
+# formats the outputs into floats with 2 digits after the point, like a dollar (15.00, 5.23, 1.25, etc)
+format(amt_tips, '.2f')
+format(weekly_salary, '.2f')
+format(weekly_pay, '.2f')
+
 # output the total number of papers delivered, weekly salary, tips for the week, and the total pay for the week
 print(
-    "Total papers delivered for the week: $" + str(weekly_amt_papers) 
-    + "\nWeekly salary: $" + str(weekly_salary) + 
-    '\nTips for the week: $' + str(amt_tips) + 
-    '\nTotal pay for the week: $' + str(weekly_pay)
+    "Weekly papers delivered: " + str(weekly_amt_papers)
+     + "\nWeekly salary: $" + str(weekly_salary) 
+     + '\nWeekly tips: $' + str(amt_tips) 
+     + '\nWeekly pay: $' + str(weekly_pay)
     )
