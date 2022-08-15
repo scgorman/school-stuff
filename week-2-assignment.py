@@ -22,4 +22,9 @@ weekly_salary = weekly_cost
 weekly_pay = weekly_salary + amt_tips
 
 # output the total number of papers delivered, weekly salary, tips for the week, and the total pay for the week
-print("Total papers delivered for the week: " + str(weekly_amt_papers) + "\nWeekly salary: " + str(weekly_salary) + '\nTips for the week: ' + str(amt_tips) + '\nTotal pay for the week: ' + str(weekly_pay))    
+print(
+    "Total papers delivered for the week: $" + str(weekly_amt_papers) 
+    + "\nWeekly salary: $" + str(weekly_salary) + 
+    '\nTips for the week: $' + str(amt_tips) + 
+    '\nTotal pay for the week: $' + str(weekly_pay)
+    )
