@@ -1,3 +1,4 @@
+# print statements with strings and variables
 print('hello class\nSean Gorman CMIS 102 08/15/2022')
 
 my_name = 'Sean'
